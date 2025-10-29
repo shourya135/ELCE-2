@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aadhaar Registration</title>
+</head>
+<body>
+
+    <h1>Aadhaar Enrolment Form</h1>
+    
+    <form action="/submit-data" method="post">
+        
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="full_name" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="date_of_birth" required><br><br>
+
+        <label for="poi">Proof of Identity:</label>
+        <select id="poi" name="poi_doc" required>
+            <option value="pan">PAN Card</option>
+            <option value="passport">Passport</option>
+        </select><br><br>
+
+        <label for="address">Full Address:</label><br>
+        <textarea id="address" name="full_address" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Register Aadhaar</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+</body>
+</html>
